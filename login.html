@@ -1,0 +1,89 @@
+<HTML>
+<STYLE>
+ input[type=text], input[type=password] {
+    width: 20%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: skyblue;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 12%;
+}
+</STYLE>
+ <HEAD>
+ <meta charset="utf-8">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <title>Mobibazar</title>
+  <link rel="shortcut icon" href="mohit.ico"/>
+  <style>body { font-family: Ubuntu, sans-serif; }
+         .back{background-color:#2a2a2a ;
+            padding-bottom: 1cm;
+            padding-top:1cm;
+            }</style>
+  <style>
+     .mySlides {display:none;}
+  </style>
+
+ </HEAD>
+ <BODY  background="3.jpg">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>                        
+             </button>
+             <a class="navbar-brand" href="Index.html" style="color: white; font-family: Ubuntu, sans-serif;"><img class="img-responsive center-block" src="mohit.png" alt="Mohit logo" width="15" height="10" style="padding-bottom: 3px;">Mobibazar</a>
+            </div>
+        <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html" style="color: white; font-family: Ubuntu, sans-serif;">LOGIN</a></li>
+          <li><a href="#section2" style="color: white; font-family: Ubuntu, sans-serif;">SIGN UP</a></li>
+          <li><a href="#section3" style="color: white; font-family: Ubuntu, sans-serif;">ABOUT</a></li>  
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>   
+    <center>
+	<form action="ses_login.php" method="POST">
+    <br>
+    <br>
+    <br>
+    <br>
+    <font size=5><font color="seashell"><label><b>Username</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <br>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+    <br>
+    <input type="checkbox" checked="checked"> Remember me</font>
+    <br>
+    <button type="submit">Login</button><br>
+    <a href="http://localhost/fests/signup.html"><button type="button">Signup</button></a>
+    <button type="button">Forgot Password?</button>
+	</form>
+    </center>
+ </BODY>
+</HTML>
+

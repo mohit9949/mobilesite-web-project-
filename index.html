@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <title>Mobibazar</title>
+  <script>
+function myFunction() {
+    alert("[!] Please LOGIN/SIGNUP. ");
+}
+</script>
+  <link rel="shortcut icon" href="mohit.ico"/>
+  <style>body { font-family: Ubuntu, sans-serif; }
+         .back{background-color:#2a2a2a ;
+         	padding-bottom: 1cm;
+         	padding-top:1cm;
+         	}</style>
+  <style>
+     .mySlides {display:none;}
+  </style>
+ 
+</head>
+
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+       		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+         	 <span class="icon-bar"></span>
+         	 <span class="icon-bar"></span>
+         	 <span class="icon-bar"></span>                        
+      		 </button>
+     	     <a class="navbar-brand" href="Index.html" style="color: white; font-family: Ubuntu, sans-serif;"><img class="img-responsive center-block" src="mohit.png" alt="Mohit logo" width="15" height="10" style="padding-bottom: 3px;">Mobibazar</a>
+    		</div>
+        <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="lab1.html" style="color: white; font-family: Ubuntu, sans-serif;">LOGIN</a></li>
+          <li><a href="signup.html" style="color: white; font-family: Ubuntu, sans-serif;">SIGN UP</a></li>
+          <li><a href="About.html" style="color: white; font-family: Ubuntu, sans-serif;">ABOUT</a></li>  
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>   
+<br><br>
+<div class="back">
+<h2 class="w3-center"  style="color:white ; font-family: Ubuntu, sans-serif;" >What's New ?</h2>
+
+<div class="w3-content w3-section" style="max-width:900px; max-height: 500px;">
+  <img class="mySlides" src="iphone7.jpg" style="width:100%;">
+  <img class="mySlides" src="lgg6.jpg" style="width:100%;">
+  <img class="mySlides" src="motog5.jpg" style="width:100%;">
+</div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+<h1  style="color: #2a2a2a; font-family: Ubuntu, sans-serif; padding-top: 1cm;padding-bottom: 1cm;padding-left: 1cm">Trending:<hr></h1>
+<div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="iphone7s.jpg" alt="Card image cap" width="230" height="240">
+            <div class="card-block">
+
+                <h3 class="card-title">iPhone 7</h3>
+                <div class="card-text">
+                    <ul>
+                    	<li><p style="font-size: 15px">12MP primary camera</p></li>
+                    	<li><p style="font-size: 15px">4.7-inch (diagonal) Retina HD 3D Touch</p></li>
+                    	<li><p style="font-size: 15px">1960 mAh battery</p></li>
+
+                    </ul>
+                    <center> <h3 style="font-family: Ubuntu, sans-serif; font-size: 18px"> Price:<i class="fa fa-inr"></i> 59,999</h3></center>
+                    <center><button type="button" class="btn btn-warning" onclick="myFunction()">Buy Now</button></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="lgg5.jpg" alt="Card image cap" width="230" height="240">
+            <div class="card-block">
+                <h3 class="card-title">LG G5</h3>
+                <div class="card-text">
+                    <ul>
+                    	<li><p style="font-size: 15px">16MP Primary Camera</p></li>
+                    	<li><p style="font-size: 15px">2800 mAh Li-Ion Battery</p></li>
+                    	<li><p style="font-size: 15px">4 GB RAM|32GB ROM|Expandable Upto 200 GB</p></li>
+
+                    </ul>
+                    <center><h3 style="font-family: Ubuntu, sans-serif; font-size: 18px"> Price:<i class="fa fa-inr"></i> 59,999</h3></center>
+                    <center><button type="button" class="btn btn-warning" onclick="myFunction()">Buy Now</button></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+       <div class="card">
+          <img class="card-img-top" src="motog5s.jpg" alt="Card image cap" width="230" height="240">
+            <div class="card-block">
+                <h3 class="card-title">Moto G5 Plus</h3>
+                <div class="card-text">
+                    <ul>
+                    	<li><p style="font-size: 15px">5.2 inch Full HD Display</p></li>
+                    	<li><p style="font-size: 15px">12MP Primary Camera | 5MP Front</p></li>
+                    	<li><p style="font-size: 15px">3000 mAh Battery | Snapdragon 625 Processor</p></li>
+                    	
+
+                    </ul>
+                    <center><h3 style="font-family: Ubuntu, sans-serif; font-size: 18px"> Price:<i class="fa fa-inr"></i> 16,999</h3></center>
+                    <center><button type="button" class="btn btn-warning" onclick="myFunction()">Buy Now</button></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+          <img class="card-img-top" src="xa.jpg" alt="Card image cap" width="230" height="240">
+            <div class="card-block">
+                <h3 class="card-title">Sony Xperia XA Dual</h3>
+                <div class="card-text">
+                    <ul>
+                    	<li><p style="font-size: 15px">5 inch HD Display</p></li>
+                    	<li><p style="font-size: 15px">2300 mAh Li-Ion Battery|MediaTek Helio P10 64-bit Processor</p></li>
+                    	<li><p style="font-size: 15px">13MP Primary Camera | 8MP Front</p></li>
+
+                    </ul>
+                    <center><h3 style="font-family: Ubuntu, sans-serif; font-size: 18px"> Price:<i class="fa fa-inr"></i> 15,990</h3></center>
+                    <center><button type="button" class="btn btn-warning" onclick="myFunction()">Buy Now</button></center>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
